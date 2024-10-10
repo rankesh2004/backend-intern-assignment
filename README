@@ -1,0 +1,17 @@
+# Assignment Submission
+
+This project implements a backend for an assignment submission system where users can upload their assignments, and admins can review and accept or reject them.
+
+## Features
+- User registration and login
+- Assignment submission by users
+- Admin registration and login
+- Admin can review assignments and accept/reject them
+- Authentication and role-based authorization
+
+## Installation
+
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install

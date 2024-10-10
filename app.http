@@ -1,0 +1,59 @@
+POST http://localhost:3000/api/users/register
+Content-Type: application/json
+
+{
+    "username": "Rankesh123",
+    "password": "Rank123",
+    "email": "rank123@gmail.com"
+}
+###
+POST http://localhost:3000/api/users/login
+Content-Type: application/json
+
+{
+    "email": "rank123@gmail.com",
+    "password": "Rank123"
+}
+
+###
+POST http://localhost:3000/api/admin/register
+Content-Type: application/json
+
+{
+    "username": "Rankesh1a1234",
+    "password": "Rankabc1234",
+    "email": "rankabc1234@gmail.com"
+}
+###
+POST http://localhost:3000/api/admin/login
+Content-Type: application/json
+
+{
+    "email": "rankabc1234@gmail.com",
+    "password": "Rankabc1234"
+}
+###
+POST http://localhost:3000/api/users/upload
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzA3OWMzZGFmMDExNDUwYzJkMmE2NDciLCJyb2xlIjoidXNlciIsImlhdCI6MTcyODU1NzcxMX0.67CRK0ORvS3F-klFtBoLwZVifiap-cWmZfH7zdmE_Ys
+Content-Type: application/json
+
+{
+    "task":"AssginmentAPI",
+    "adminId":"6707af52e28ff9c89c9f6d7e"
+}
+
+###
+GET http://localhost:3000/api/users/admins
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzA3OWMzZGFmMDExNDUwYzJkMmE2NDciLCJyb2xlIjoidXNlciIsImlhdCI6MTcyODU1NzcxMX0.67CRK0ORvS3F-klFtBoLwZVifiap-cWmZfH7zdmE_Ys
+
+###
+GET http://localhost:3000/api/admin/assignments
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzA3YWY1MmUyOGZmOWM4OWM5ZjZkN2UiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3Mjg1NjExMTYsImV4cCI6MTcyODU2NDcxNn0.rPOEKm28q_5aneKLrq9mFoc00D8ZitluqLFGyyVT6fY
+  
+###
+POST http://localhost:3000/api/admin/assignments/6707c61b4946fa8a4d9c5cba/accept
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzA3YWY1MmUyOGZmOWM4OWM5ZjZkN2UiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3Mjg1NjExMTYsImV4cCI6MTcyODU2NDcxNn0.rPOEKm28q_5aneKLrq9mFoc00D8ZitluqLFGyyVT6fY
+
+###
+POST http://localhost:3000/api/admin/assignments/6707c6574946fa8a4d9c5cbd/reject
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzA3YWY1MmUyOGZmOWM4OWM5ZjZkN2UiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3Mjg1NjExMTYsImV4cCI6MTcyODU2NDcxNn0.rPOEKm28q_5aneKLrq9mFoc00D8ZitluqLFGyyVT6fY
