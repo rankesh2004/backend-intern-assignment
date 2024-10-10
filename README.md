@@ -11,7 +11,15 @@ This project implements a backend for an assignment submission system where user
 
 ## Installation
 
-1. Clone the repository
-2. Install dependencies:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/backend-intern-assignment.git
+2. Navigate to the project directory:
+   ```bash
+   cd backend-intern-assignment
+3. Install dependencies:
    ```bash
    npm install
+4. Start the server:
+   ```bash
+   node app.js
